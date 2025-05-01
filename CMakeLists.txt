@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0)
+cmake_minimum_required(VERSION 3.11.0)
 project(cpptoml)
 
 set(cpptoml_VERSION 0.4.0)
@@ -15,8 +15,6 @@ option(ENABLE_LIBCXX "Use libc++ for the C++ standard library" ON)
 option(CPPTOML_BUILD_EXAMPLES "Build examples" ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
-
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/deps/meta-cmake)
 
 if(UNIX OR MINGW)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic")
