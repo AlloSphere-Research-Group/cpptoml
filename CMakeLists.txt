@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11.0)
+cmake_minimum_required(VERSION 3.31)
 project(cpptoml)
 
 set(cpptoml_VERSION 0.4.0)
